@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.betterperf.client.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"EntityRendererCullMixin",
+		"LevelRendererFrustumAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

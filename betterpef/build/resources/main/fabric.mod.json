@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "betterperf",
+	"version": "1.0.0",
+	"name": "BetterPerf",
+	"description": "Performance optimizations focused on entity culling and AI throttling for heavy spawn areas and farms.",
+	"authors": [
+		"BetterPerf"
+	],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.betterperf.BetterPerfMod"
+		],
+		"client": [
+			"net.betterperf.client.BetterPerfClient"
+		]
+	},
+	"mixins": [
+		"betterperf.mixins.json",
+		{
+			"config": "betterperf.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
